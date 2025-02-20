@@ -18,6 +18,8 @@ defmodule LunaTakeHomeWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/submit_url", PageController, :url_submission
+    post "/submit_url", PageController, :process_url
   end
 
   # Other scopes may use custom stacks.

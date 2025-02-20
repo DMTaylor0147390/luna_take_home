@@ -1,0 +1,7 @@
+<section class="phx-hero">
+  <h1><%= gettext "Submit URL Here"%></h1>
+  <!-- <h1><%= inspect binding()%></h1> -->
+  <h1><%= inspect @conn.assigns%></h1>
+  <input value={@default_url} oninput={IO.inspect("foobar")} type="url"/>
+  <button>Process URL</button>
+</section>
